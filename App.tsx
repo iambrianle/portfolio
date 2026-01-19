@@ -126,7 +126,7 @@ const App: React.FC = () => {
                      <div className="inline-flex items-center gap-3 px-4 py-2 bg-theme-surface/80 border border-theme-accent/20 backdrop-blur-sm">
                         <Code2 size={14} className="text-theme-accent" />
                         <span className="text-xs font-mono text-theme-accent uppercase tracking-widest">
-                            <ScrambleText text="Status: Online" />
+                            <ScrambleText text="Hello Stranger!" />
                         </span>
                         <span className="w-1.5 h-1.5 bg-theme-accent rounded-full animate-pulse"></span>
                     </div>
@@ -243,7 +243,7 @@ const App: React.FC = () => {
                                 </div>
                                 <div>
                                     <div className="text-white font-bold">Johns Hopkins University</div>
-                                    <div className="text-theme-muted text-sm font-mono">Engineering Innovation Scholar</div>
+                                    <div className="text-theme-muted text-sm font-mono">Engineering Innovation</div>
                                 </div>
                              </div>
                          </div>
@@ -252,12 +252,12 @@ const App: React.FC = () => {
                      <div className="lg:col-span-8 space-y-12">
                          <div className="space-y-8 text-xl md:text-2xl text-theme-muted font-light leading-relaxed">
                              <p>
-                                 <span className="text-white">I don't just write code; I build systems.</span> As a senior at Jackson Reed High School, I bridge the gap between statistics and practical computer engineering.
+                                 <span className="text-white">I don't just write code; I build systems.</span> As a senior at Jackson Reed High School, I want to bridge the gap between statistics and practical computer engineering.
                              </p>
                              <p>
-                                 My work focuses on creating <span className="text-theme-accent decoration-1 underline decoration-theme-accent/30 underline-offset-4">human-centric AI solutions</span>. Whether it's developing RAG chatbots for Microsoft or troubleshooting infrastructure for DC Public Schools, I aim for impact.
+                                 My work focuses on creating <span className="text-theme-accent decoration-1 underline decoration-theme-accent/30 underline-offset-4">human-centric AI solutions</span>. Whether it's developing RAG chatbots for Microsoft or troubleshooting issues at the Help Desk, I aim for impact.
                              </p>
-                             <p className="text-lg">
+                             <p>
                                  Beyond this, I help with projects relating to motion capture in university labs and design fundraising products. I believe engineering is fundamentally about solving people problems.
                              </p>
                          </div>

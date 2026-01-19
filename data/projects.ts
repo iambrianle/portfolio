@@ -50,14 +50,14 @@ export const PROJECTS: Project[] = [
         'Role-Based Access (Admin/Intern/Vol)'
     ],
     year: '2025',
-    role: 'Lead Full-Stack Developer'
+    role: 'Full-Stack Developer'
   },
   {
     id: 'cad-fundraising',
     title: 'CAD Fundraising Initiative',
     description: 'Designed and produced 200+ custom products to support community educational initiatives.',
     fullDescription: 'At Asian American LEAD (AALEAD), I utilized Computer-Aided Design (CAD) to create over 200 custom keychains. I managed the entire production and sales lifecycle, raising over $1,000 to directly support community and educational programs. I also conducted research on disability access in education to inform advocacy efforts.',
-    tags: ['CAD', '3D Design', 'Project Mgmt', 'Advocacy'],
+    tags: ['CAD', '3D Design', 'Project Lead', 'Advocacy'],
     image: 'https://res.cloudinary.com/dcr5jbw1n/image/upload/v1768804281/IMG_8651_oact9f.jpg',
     link: '#',
     features: [
