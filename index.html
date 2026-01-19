@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vu Anh Minh Le | Statistics & Computer Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Outfit', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              theme: {
+                bg: '#030712', // Gray 950
+                surface: '#0B101B', // Richer Dark Blue-Gray
+                text: '#f9fafb', // Gray 50
+                muted: '#94a3b8', // Slate 400
+                accent: '#6366f1', // Indigo 500
+                secondary: '#d946ef', // Fuchsia 500
+              }
+            },
+            animation: {
+              'float': 'float 8s ease-in-out infinite',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-15px)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: transparent; /* Changed from #030712 to transparent to show canvas */
+        color: #f9fafb;
+        overflow-x: hidden;
+      }
+      /* Custom scrollbar - thinner and subtler */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #030712;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #374151;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #6366f1;
+      }
+
+      /* Hide Default Cursor on desktop */
+      @media (pointer: fine) {
+        body, a, button, input, select, textarea, [role="button"] {
+          cursor: none !important;
+        }
+      }
+      
+      /* Markdown Styles */
+      .prose h1 { font-family: 'Outfit', sans-serif; font-size: 2.25rem; font-weight: 700; margin-bottom: 1.5rem; color: #fff; }
+      .prose h2 { font-family: 'Outfit', sans-serif; font-size: 1.75rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #fff; }
+      .prose h3 { font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #e0e7ff; }
+      .prose p { margin-bottom: 1.25rem; line-height: 1.75; color: #d1d5db; }
+      .prose ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; color: #d1d5db; }
+      .prose li { margin-bottom: 0.5rem; }
+      .prose strong { color: #fff; font-weight: 600; }
+      .prose code { background-color: rgba(99, 102, 241, 0.1); padding: 0.2em 0.4em; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 0.9em; color: #a5b4fc; }
+      .prose pre { background-color: #0B101B; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.05); }
+      .prose pre code { background-color: transparent; padding: 0; color: #e5e7eb; }
+      .prose a { color: #6366f1; text-decoration: underline; text-underline-offset: 4px; }
+      .prose a:hover { color: #818cf8; }
+      .prose blockquote { border-left: 4px solid #6366f1; padding-left: 1rem; font-style: italic; color: #94a3b8; margin-bottom: 1.5rem; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-markdown": "https://esm.sh/react-markdown@9.0.1?bundle"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
