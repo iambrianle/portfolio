@@ -304,21 +304,31 @@ const App: React.FC = () => {
                         
                         <div className="space-y-2">
                              <p className="text-theme-muted font-mono text-sm uppercase tracking-widest">Email Address</p>
-                             <a href="mailto:hello@brianle.dev" className="block text-2xl md:text-4xl font-bold text-white hover:text-theme-accent transition-colors">
-                                hello@brianle.dev
+                             <a href="mailto:iambrian@duck.com" className="block text-2xl md:text-4xl font-bold text-white hover:text-theme-accent transition-colors">
+                                iambrian@duck.com
                              </a>
                         </div>
                     </div>
 
                     <div className="lg:pl-12 border-l border-white/10 space-y-12">
                         <p className="text-xl text-theme-muted font-light leading-relaxed">
-                            I'm currently exploring opportunities in Software Engineering, AI Research, and Data Science. Open to collaborations for Fall 2025.
+                            I'm currently exploring opportunities in Software Engineering, AI Research, and Data Science for Fall of 2026.
                         </p>
                         
                         <div className="space-y-6">
-                            {['LinkedIn', 'GitHub', 'Twitter'].map(social => (
-                                <a key={social} href="#" className="group flex items-center justify-between py-4 border-b border-white/10 hover:border-white transition-colors cursor-hover">
-                                    <span className="text-2xl font-display font-bold text-white">{social}</span>
+                            {[
+                                { name: 'LinkedIn', url: 'https://www.linkedin.com/in/minhlevu/' },
+                                { name: 'GitHub', url: 'https://github.com/iambrianle' },
+                                { name: 'Twitter', url: 'https://twitter.com/' }
+                            ].map((social) => (
+                                <a 
+                                    key={social.name} 
+                                    href={social.url} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className="group flex items-center justify-between py-4 border-b border-white/10 hover:border-white transition-colors cursor-hover"
+                                >
+                                    <span className="text-2xl font-display font-bold text-white">{social.name}</span>
                                     <ArrowRight className="text-theme-muted group-hover:text-white group-hover:-rotate-45 transition-all duration-300" />
                                 </a>
                             ))}
