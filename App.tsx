@@ -118,7 +118,7 @@ const App: React.FC = () => {
 
       {/* Main Content */}
       <main className={`flex-grow w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-24 pt-32 pb-20 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-        
+        <div key={currentView} className="animate-fade-in-up w-full">
         {/* VIEW: HOME */}
         {currentView === ViewState.HOME && (
             <div className="min-h-[70vh] flex flex-col justify-center relative z-10">
@@ -337,7 +337,7 @@ const App: React.FC = () => {
                  </div>
              </div>
         )}
-
+        </div>
       </main>
 
       <footer className="relative w-full py-8 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center text-xs font-mono text-theme-muted border-t border-white/5 bg-theme-bg mt-auto z-10">
