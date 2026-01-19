@@ -194,7 +194,7 @@ const App: React.FC = () => {
 
         {/* VIEW: ABOUT */}
         {currentView === ViewState.ABOUT && (
-             <div className="animate-in fade-in zoom-in-95 duration-500 max-w-7xl mx-auto py-12">
+             <div className="animate-zoom-in max-w-7xl mx-auto py-12">
                  
                  <div className="mb-20">
                     <div className="flex items-center gap-3 mb-6">
