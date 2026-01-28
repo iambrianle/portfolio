@@ -180,12 +180,6 @@ const CustomCursor: React.FC = () => {
       
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none" />
 
-      {/* Main Cursor Dot */}
-      <div
-        ref={cursorRef}
-        className={`fixed top-0 left-0 -ml-1 -mt-1 w-2 h-2 rounded-full z-[100] transition-colors duration-200 ${hovering ? 'bg-theme-accent' : 'bg-white mix-blend-difference'}`}
-      />
-
       {/* Follower Ring */}
       <div
         ref={followerRef}

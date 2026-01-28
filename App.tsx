@@ -3,8 +3,8 @@ import { Globe, Mail, ArrowRight, Menu, X, GraduationCap, Award, Briefcase, Code
 import Background from './components/Background';
 import ProjectsView from './components/ProjectsView';
 import BlogView from './components/BlogView';
+import CustomCursor from './components/CustomCursor';
 import ScrambleText from './components/ScrambleText';
-import TerminalHero from './components/TerminalHero';
 import { ViewState } from './types';
 
 // CONFIGURATION
@@ -122,17 +122,6 @@ const App: React.FC = () => {
         {/* VIEW: HOME */}
         {currentView === ViewState.HOME && (
             <div className="min-h-[70vh] flex flex-col justify-center relative z-10">
-                <TerminalHero />
-                
-                {/* Decorative HUD Elements */}
-                <div className="absolute top-0 right-0 hidden md:block text-[10px] font-mono text-theme-muted/30 select-none">
-                    <div>SYS.VER.2.6</div>
-                    <div>ID: 8492-AX</div>
-                </div>
-                <div className="absolute bottom-10 right-10 hidden md:block">
-                     <div className="w-24 h-24 border border-theme-accent/20 rounded-full animate-spin-slow border-t-transparent border-l-transparent"></div>
-                </div>
-
                 <div className="mb-12">
                      <div className="inline-flex items-center gap-3 px-4 py-2 bg-theme-surface/80 border border-theme-accent/20 backdrop-blur-sm">
                         <Code2 size={14} className="text-theme-accent" />

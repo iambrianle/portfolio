@@ -32,7 +32,6 @@
               'zoom-in': 'zoomIn 0.5s ease-out forwards',
               'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
               'gradient-x': 'gradient-x 15s ease infinite',
-              'spin-slow': 'spin 12s linear infinite',
             },
             keyframes: {
               float: {
@@ -81,17 +80,9 @@
       }
       ::-webkit-scrollbar-thumb:hover {
         background: #6366f1;
-      }
-
-      /* Hide Default Cursor on desktop */
-      @media (pointer: fine) {
-        /* body, a, button, input, select, textarea, [role="button"] {
-          cursor: none !important;
-        } */
-      }
-      
-      /* Markdown Styles */
-      .prose h1 { font-family: 'Outfit', sans-serif; font-size: 2.25rem; font-weight: 700; margin-bottom: 1.5rem; color: #fff; }
+            }
+            
+            /* Smooth scrolling */      .prose h1 { font-family: 'Outfit', sans-serif; font-size: 2.25rem; font-weight: 700; margin-bottom: 1.5rem; color: #fff; }
       .prose h2 { font-family: 'Outfit', sans-serif; font-size: 1.75rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #fff; }
       .prose h3 { font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #e0e7ff; }
       .prose p { margin-bottom: 1.25rem; line-height: 1.75; color: #d1d5db; }
